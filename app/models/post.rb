@@ -1,6 +1,6 @@
 #Placeholder for a model
 
-#class Post < ActiveRecord::Base
+class Post < ActiveRecord::Base
   
   #attr_accessor :name, :content
   
@@ -15,4 +15,4 @@
   #def self.all
    # @@all
   #end
-#end
+end
