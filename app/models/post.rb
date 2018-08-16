@@ -1,18 +1,18 @@
 #Placeholder for a model
 
-class Post < ActiveRecord::Base
+#class Post < ActiveRecord::Base
   
-  attr_accessor :name, :content
+  #attr_accessor :name, :content
   
-  @@all = []
+  #@@all = []
   
-  def initialize(params)
-    @name = params[:name]
-    @content = params[:content]
-    @@all << self
-  end
+  #def initialize(params)
+   # @name = params[:name]
+   # @content = params[:content]
+   # @@all << self
+  #end
   
-  def self.all
-    @@all
-  end
-end
+  #def self.all
+   # @@all
+  #end
+#end
