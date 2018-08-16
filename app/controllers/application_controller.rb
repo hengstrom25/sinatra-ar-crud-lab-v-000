@@ -8,21 +8,21 @@ class ApplicationController < Sinatra::Base
     set :views, 'app/views'
   end
   
-  get '/posts/new' do #loads new blog post form
+  get '/posts/new' do #load new blog post form
     erb :new
   end
   
-  post '/posts' do #creates a blog post
+  post '/posts' do #create a blog post
     @posts = Post.create(params)
     redirect to '/posts'
   end
   
-  get '/posts' do #loads index page
+  get '/posts' do #load index page
     @posts = Post.all
     erb :index
   end
   
-  get '/posts/:id' do #loads show page
+  get '/posts/:id' do #load show page
     @post = Post.find_by_id(params[:id])
     erb :show
   end
