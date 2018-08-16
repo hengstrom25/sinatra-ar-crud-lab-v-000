@@ -28,6 +28,8 @@ class ApplicationController < Sinatra::Base
   end
   
   get '/posts/:id/edit' do #update post
+    erb :edit
+  end
   
   
 end
