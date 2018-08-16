@@ -2,4 +2,5 @@
   <form method="POST" action="/posts/<%=@post.id%>">
   <input id="hidden" type="hidden" name="_method" value="patch">
   Name: <input type="text" name="name" id="<%=@post.name%>">
-  Content: <input type="text" name="content">
+  Content: <input type="text" name="content" id="<%=@post.content%>">
+  </form>
